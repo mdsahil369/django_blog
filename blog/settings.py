@@ -26,7 +26,9 @@ SECRET_KEY = 'django-insecure-+hut!vl#f$bo3htgqs9up((@q82kwh3&-nz3f@+0j3qn7m)513
 DEBUG = True
 
 ALLOWED_HOSTS = ['*']
-
+CSRF_TRUSTED_ORIGINS = [
+    "https://django-blog-zafs.onrender.com"
+]
 
 # Application definition
 
