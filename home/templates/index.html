@@ -439,7 +439,7 @@
 											<li class="list-inline-item">{{post.date}}</li>
 										</ul>
 										<h5 class="post-title"><a href={% url "blog_detail" post.blog_slug %}>{{ post.title|slice:":60" }}...</a></h5>
-										<p class="excerpt mb-0">{{ post.content|slice:":120" }}...</p>
+										<p class="excerpt mb-0">{{ post.content|safe|slice:":120" }}...</p>
 										<div class="post-bottom clearfix d-flex align-items-center">
 											<div class="social-share me-auto">
 												<button class="toggle-button icon-share"></button>

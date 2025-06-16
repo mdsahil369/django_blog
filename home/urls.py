@@ -1,7 +1,8 @@
-from django.urls import path
+from django.urls import path, include
 from home.views import *
 from django.conf import settings
 from django.conf.urls.static import static
+
 
 urlpatterns = [
     path('', home, name='home'),
@@ -12,6 +13,7 @@ urlpatterns = [
     path('/about', about, name='about'),
     path('/contact', contact, name='contact'),
     path('/search', search, name='search'),
+    path("ckeditor5/", include('django_ckeditor_5.urls')),
 ]
 if settings.DEBUG:
     urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

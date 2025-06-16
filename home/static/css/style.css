@@ -2543,14 +2543,18 @@ footer .footer-inner .copyright {
 
 /*                      SEARCH POPUP                              
 /*=================================================================*/
-
 .search-popup {
-    background: white;
+    background: rgba(255, 255, 255, 0.2);  /* White with transparency */
+    backdrop-filter: blur(10px);           /* Glass blur */
+    -webkit-backdrop-filter: blur(10px);   /* For Safari */
+    padding: 40px 60px;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
     position: fixed;
-    left: 0;
-    top: 0;
-    height: 100vh;
-    width: 100%;
+    left: 15%;
+    top: 25vh;
+    height: 50vh;
+    width: 70%;
     z-index: 6;
     opacity: 0;
     visibility: hidden;
@@ -3599,6 +3603,12 @@ button:focus {
     }
     .post-carousel-widget .post-carousel .post-title {
         font-size: 16px;
+    }
+    .search-popup {
+    left: 5%;
+    top: 25vh;
+    height: 25vh;
+    width: 90%;
     }
 }
 
