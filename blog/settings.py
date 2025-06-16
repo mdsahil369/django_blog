@@ -73,6 +73,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'blog.wsgi.application'
 
+PORT = os.environ.get("PORT", "8000")
 
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
