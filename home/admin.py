@@ -10,6 +10,8 @@ admin.site.register(Category)
 admin.site.register(Comment)
 
 
+# this is first changes
+
 @admin.register(Blog)
 class BlogAdmin(admin.ModelAdmin):
     list_display = ['title', 'blog_slug', 'seo_score']
